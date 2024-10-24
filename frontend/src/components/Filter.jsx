@@ -82,7 +82,7 @@ const Filter = ({ onPickupLocationChange, onDropoffLocationChange }) => {
         alignItems="center"
       >
         <IconButton onClick={handleswapfunctionality}>
-          <SwapVertIcon sx={{color:'white',backgroundColor:'#FF90BC',borderRadius:"25%",
+          <SwapVertIcon sx={{color:'white',backgroundColor:'#7E60BF',borderRadius:"25%",
             padding:"" ,
             fontSize:'50px'}} fontSize="large" />
         </IconButton>
@@ -102,7 +102,7 @@ const Filter = ({ onPickupLocationChange, onDropoffLocationChange }) => {
             "& .MuiOutlinedInput-root": { borderRadius: "16px", },
             "& .MuiSelect-select": {
               fontSize: "18px",
-              borderColor:'#FF90BC'
+              borderColor:'#7E60BF'
             },
           }}
           select

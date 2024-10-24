@@ -5,7 +5,7 @@ const Footer = () => {
     <footer>
       <div className="flex flex-wrap  items-center justify-between p-4 bg-white">
         <div className="left  w-3/12 ">
-          <h1 className=" font-bold text-lg md:text-xl font-[Plus Jakarta Sans] " style={{color:'#FF90BC'}}>
+          <h1 className=" font-bold text-lg md:text-xl font-[Plus Jakarta Sans] " style={{color:'#7E60BF'}}>
             MORENT™
           </h1>
           <p className="text-lg text-gray-500">

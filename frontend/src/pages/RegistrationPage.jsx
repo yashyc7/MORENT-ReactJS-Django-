@@ -11,7 +11,8 @@ import {
 } from "@mui/material";
 import { useNavigate } from "react-router-dom";
 import axios from 'axios'
-
+import {toast} from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css'
 
 const RegistrationPage = () => {
   const navigate = useNavigate(); 
@@ -37,7 +38,7 @@ const RegistrationPage = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     if (formData.password !== formData.confirmPassword) {
-      alert("Passwords do not match");
+      toast.error("Passwords do not match");
       return;
     }
     try {
@@ -48,10 +49,11 @@ const RegistrationPage = () => {
         confirm_password: formData.confirmPassword
       });
 
-      alert("Registration successful!");
+      toast.success("Registration successful!");
       navigate('/login');
     } catch (error) {
       console.error("Registration error:", error.response ? error.response.data : error.message); // Set error message
+      toast.error("Network error")
     }
   };
 
@@ -64,13 +66,13 @@ const RegistrationPage = () => {
           fontWeight: "bold",
           fontSize: "40px",
           marginBottom: "2vh",
-          color: "#F0A8D0",
+          color: "#7E60BF",
         }}
       >
         Morent ™
       </Typography>
 
-      <Paper elevation={3} style={{ padding: 20, borderRadius: "20px" }}>
+      <Paper elevation={5} style={{ padding: 20, borderRadius: "20px" }}>
         <form onSubmit={handleSubmit}>
           <Typography
             variant="h5"
@@ -200,7 +202,7 @@ const RegistrationPage = () => {
                     name="acceptTerms"
                     checked={formData.acceptTerms}
                     onChange={handleChange}
-                    style={{color:'#F0A8D0'}}
+                    style={{color:'#7E60BF'}}
                     required
                   />
                 }
@@ -216,11 +218,11 @@ const RegistrationPage = () => {
                 color="primary"
                 fullWidth
                 sx={{
-                  backgroundColor: "#F0A8D0",
+                  backgroundColor: "#7E60BF",
                   "&:hover": {
                     backgroundColor: "white",
-                    color: "#F0A8D0",
-                    border: "1px solid #F0A8D0",
+                    color: "#7E60BF",
+                    border: "1px solid #7E60BF",
                   },
                 }}
               >

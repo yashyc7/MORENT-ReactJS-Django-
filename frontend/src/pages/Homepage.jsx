@@ -51,7 +51,7 @@ const Homepage = () => {
             <button
               className=" text-white font-bold py-2 px-4 rounded-full mb-4"
               onClick={handleBackClick}
-              style={{backgroundColor:'#FF90BC'}}
+              style={{backgroundColor:'#7E60BF'}}
             >
               Back to Cars
             </button>
@@ -124,7 +124,7 @@ const Homepage = () => {
                 </span>
                 <button
                   className="text-white font-bold py-2 px-4 rounded-full"
-                  style={{backgroundColor:'#FF90BC'}}
+                  style={{backgroundColor:'#7E60BF'}}
                   onClick={handleNextClick}
                 >
                   Next

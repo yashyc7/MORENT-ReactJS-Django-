@@ -75,13 +75,13 @@ const LoginPage = () => {
           fontWeight: "bold",
           fontSize: "50px",
           marginBottom: "2vh",
-          color: "#F0A8D0 ",
+          color: "#7E60BF ",
         }}
       >
         MORENT ™
       </Typography>
 
-      <Paper elevation={3} style={{ padding: 20, borderRadius: "20px" }}>
+      <Paper elevation={5} style={{ padding: 20, borderRadius: "20px" }}>
         <Typography variant="h5" align="center" style={{ fontWeight: "bold" }}>
           Sign In
         </Typography>
@@ -122,14 +122,14 @@ const LoginPage = () => {
                   variant="contained"
                   onClick={handleLogin}
                   sx={{
-                    backgroundColor: "#F0A8D0",
+                    backgroundColor: "#7E60BF",
                     "&:hover": {
                       backgroundColor: "white !important",
                       borderColor: "black !important",
                       borderWidth: "2px",
-                      color: "#F0A8D0",
+                      color: "#7E60BF",
                       "&:before": {
-                        backgroundColor: "#F0A8D0 !important",
+                        backgroundColor: "#7E60BF !important",
                         color: "#fff",
                       },
                     },
@@ -142,14 +142,14 @@ const LoginPage = () => {
                   onClick={handleSignUp}
                   variant="contained"
                   sx={{
-                    backgroundColor: "#F0A8D0",
+                    backgroundColor: "#7E60BF",
                     "&:hover": {
                       backgroundColor: "white !important",
                       borderColor: "black !important",
                       borderWidth: "2px",
-                      color: "#F0A8D0",
+                      color: "#7E60BF",
                       "&:before": {
-                        backgroundColor: "#F0A8D0 !important",
+                        backgroundColor: "#7E60BF !important",
                         color: "#fff",
                       },
                     },
