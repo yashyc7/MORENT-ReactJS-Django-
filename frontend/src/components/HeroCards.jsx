@@ -56,7 +56,7 @@ const HeroCards = () => {
               <Button
                 variant="contained"
                 sx={{
-                  backgroundColor: "#F0A8D0",
+                  backgroundColor: "#7E60BF",
                   color: "white",
                   marginTop: "auto",
                   fontSize: "2vh",
@@ -128,7 +128,7 @@ const HeroCards = () => {
               <Button
                 variant="contained"
                 sx={{
-                  backgroundColor:" #F0A8D0",
+                  backgroundColor:" #7E60BF",
                   color: "white",
                   borderRadius:'20px',
                   marginTop: "auto",

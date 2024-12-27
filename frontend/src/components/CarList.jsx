@@ -60,7 +60,7 @@ const CarList = ({ searchTerm, onRentClick, pickupLocation }) => {
         <div className="text-gray-400 font-normal">Popular car</div>
         <div
           className= "cursor-pointer"
-          style={{color:'#FF90BC'}}
+          style={{color:'#7E60BF'}}
           onClick={handleShowAllCars}
         >
           {showAll ? "Show Less Cars" : "Show All Cars"}
@@ -105,14 +105,14 @@ const CarCard = React.memo(({ car, onRentClick }) => {
       placement="top"
       arrow
     >
-      <Paper elevation={2} className="rounded-full p-4 bg-white">
+      <Paper elevation={5} className="rounded-full p-4 bg-white">
         {" "}
         {/* Replace shadow-2xl with Paper and elevation */}
         <div style={{ display: "flex", justifyContent: "space-between" }}>
           <h2 className="text-lg font-bold mb-0">{car.name}</h2>
           <div onClick={handleFavoriteClick}>
             {isFavorited ? (
-              <FavoriteIcon sx={{ color: "#FF90BC", cursor: "pointer" }} />
+              <FavoriteIcon sx={{ color: "#7E60BF", cursor: "pointer" }} />
             ) : (
               <FavoriteBorderOutlinedIcon sx={{ cursor: "pointer" }} />
             )}
@@ -151,7 +151,7 @@ const CarCard = React.memo(({ car, onRentClick }) => {
           <span className="text-lg font-bold">${car.price}/day</span>
           <button
             className="bg-blue-500 hover:bg-pink-600 text-white font-bold py-2 px-4 rounded-full"
-            style={{backgroundColor:'#FF90BC'}}
+            style={{backgroundColor:'#7E60BF'}}
             onClick={() => onRentClick(car)}
           >
             Rent Now
